@@ -1,9 +1,6 @@
 import { useState } from "react"
 
 
-function printData (item){
-    console.log(`the item name is ${item.name}`)
-}
 
 const ListItem = props => {
     const { itemData } = props
@@ -70,22 +67,35 @@ const EventsApp = () => {
     const handleSearch = (searchText) => {
         // searchText = ""
         const result = list.filter((item) => {
-            return item?.name?.toLowerCase().includes(searchText.toLowerCase().trim())
+            return item?.name?.toLowerCase().includes(searchText.toLowerCase().trim()) 
         })
         console.log(result)
         // list = result
         setItems(result)
     }
 
+    // let isDarkTheme = true
+
+    const [isDarkTheme, setDarkTheme] = useState(true)
+
+
+    const themeToggle = () => {
+        setDarkTheme(!isDarkTheme)
+    }
 
     return (
-        <div>
+        <div style={{
+                backgroundColor: isDarkTheme ? "black" : "white", 
+                color: isDarkTheme ? "white" : "black"
+            }}>
             Counter: {++count}
             <input 
                 type="text" 
                 placeholder="Search Names" 
                 onChange={(event) => handleSearch(event.target.value)} 
             />
+            <button onClick={themeToggle}>Change Theme</button>
+
             {items.map((item) => <ListItem key={item.id} itemData={item} />)}
         </div>    
     )
