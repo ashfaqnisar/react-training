@@ -13,7 +13,11 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<EventsApp />);
+root.render(
+    <React.StrictMode>
+        <EventsApp />
+    </React.StrictMode>
+);
 
 
 

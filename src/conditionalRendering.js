@@ -22,7 +22,6 @@ const App = () => {
             <ConditionalRendering age={17} />
             <ConditionalRendering age={18} />
             <ConditionalRendering age={19} />
-            <ConditionalRendering />
         </div>
     )
 }

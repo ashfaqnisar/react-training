@@ -1,11 +1,10 @@
 
-const students = {
-  "vivek": {
-    "name": "vivek",
-    "age": "23",
+const students = {"vivek": {
+"name": "vivek",
+      "age": "23",
     "email": "vivek@email.com"
   },
-  "rahul": {
+  "rahul" :    {
     "name": "rahul",
     "age": "22",
     "email": "rahul@email.com"
@@ -19,8 +18,7 @@ const students = {
     "name": "ashfaq",
     "age": "23",
     "email": "ashfaq@email.com"
-  },
-}
+  },}
 
 // React Component
 const test = (name) => { // rahul
@@ -41,10 +39,6 @@ const test = (name) => { // rahul
   );
 }
 
-const getStudent = () => {
-  return "test"
-}
-
 const Student = (properties) => {
   console.log(properties)
   // {
@@ -61,11 +55,7 @@ const Student = (properties) => {
 
 // React Component  - Class and
 const SampleFunction = () => {
-  let isDarkTheme = false
-
-  const theme = isDarkTheme ? 'dark' : 'light'
-
-
+ 
   return (
     <div>
       <h1>Hello World</h1>
