@@ -1,4 +1,5 @@
 import "./Students.css"
+import { Link } from "react-router-dom"
 
 const Student = (props) => {
     return (

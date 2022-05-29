@@ -1,7 +1,7 @@
-
-const students = {"vivek": {
-"name": "vivek",
-      "age": "23",
+const students = {
+  "vivek": {
+  "name": "vivek",
+            "age": "23",
     "email": "vivek@email.com"
   },
   "rahul" :    {

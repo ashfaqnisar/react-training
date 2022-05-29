@@ -7,7 +7,10 @@ import './index.css';
 // import Students from "./Students"
 // import ConditionalRenderingApp from "./conditionalRendering"
 // import ListApp from './lists';
-import EventsApp from './events';
+// import SampleReactApp from "./fragment"
+// import EventsApp from './events';
+// import UseEffectSample from './UseEffectSample';
+import SampleApp from './ReactRouter';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -15,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <EventsApp />
+           <SampleApp />
     </React.StrictMode>
 );
 

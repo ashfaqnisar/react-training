@@ -5,7 +5,7 @@ import "./Students.css"
 // var test12 = "test12"
 
 const ListItem = props => {
-    const { itemData } = props
+    const { itemData     } = props
 
     return (
         <div 
@@ -27,6 +27,8 @@ const ListItem = props => {
 };
 
 let count = 0;
+
+// const testet234 = " dsdsda"
 
 const EventsApp = () => {
     let list = [{
